@@ -12,24 +12,25 @@ public class SortLettersAndNumbers {
 */
 public static void main(String[] args) {
     String input = "DC501GCCCA098911";
-    String newStr = "";
+    String newStr = ""; //
     for(int i = 0; i < input.length()-1; i++){
         if((Character.isLetter(input.charAt(i)) && Character.isDigit(input.charAt(i+1)) || (Character.isDigit(input.charAt(i)) && Character.isLetter(input.charAt(i+1))))){
             newStr += input.charAt(i) + " ";
         }else{
-            newStr += input.charAt(i);
+            newStr += input.charAt(i);//dc_501_gccca_098911
         }
     }
     System.out.println(newStr);
     String output = "";
-    for(String each : newStr.split(" ")){
-        char [] chars = each.toCharArray();
-        Arrays.sort(chars);
-        for(char c : chars){
-            output += c;
+    for(String each : newStr.split(" ")){ //dc
+        char [] chars = each.toCharArray(); //d
+        Arrays.sort(chars); //cd
+        for(char c : chars){ //cd
+            output += c; //cd
         }
     }
 
     System.out.println(output);
 }
+
 }
