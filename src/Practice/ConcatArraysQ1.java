@@ -20,4 +20,5 @@ public class ConcatArraysQ1 {
 
         System.out.println(Arrays.toString(arr3));
     }
+
 }
