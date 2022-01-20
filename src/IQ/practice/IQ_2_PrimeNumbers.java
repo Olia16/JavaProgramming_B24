@@ -15,6 +15,6 @@ public class IQ_2_PrimeNumbers {
     }
 
     public static void main(String[] args) {
-        System.out.println(primeNum(11));
+        System.out.println(primeNum(9));
     }
 }
